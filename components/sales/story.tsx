@@ -60,7 +60,7 @@ export function FounderStory() {
       <h2 className="text-2xl font-black tracking-tight text-foreground sm:text-3xl">My real story</h2>
       <div className="mt-6 space-y-5 text-[1.05rem] leading-relaxed text-foreground/90">
         <p>
-          I&apos;m Martin. I was born and raised in Nigeria, and today I live in Canada. For most of my adult life
+          I&apos;m Daniel. I was born and raised in Nigeria, and today I live in Canada. For most of my adult life
           I&apos;ve worked in IT and ERP systems — the kind of work where you&apos;re always learning something new,
           always keeping up with the next tool, the next update, the next skill.
         </p>
