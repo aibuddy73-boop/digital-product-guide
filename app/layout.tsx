@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   description:
     'Turn one idea into your first published digital product in 7 days using AI. A practical, honest execution system for Nigerian creators, workers, students and side-hustlers.',
   generator: 'v0.app',
+  alternates: {
+    canonical: 'https://digital-product-guide-tau.vercel.app/',
+  },
   openGraph: {
     title: 'Stop Overthinking — Build and Launch in 7 Days',
     description: 'A practical AI-assisted action system for turning one useful idea into your first published digital product.',
@@ -63,6 +66,47 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`bg-background ${roboto.variable} ${lato.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "Stop Overthinking: The 7-Day Action System",
+              "description": "Turn one idea into your first published digital product in 7 days using AI. A practical, honest execution system for Nigerian creators, workers, students and side-hustlers.",
+              "brand": { "@type": "Organization", "name": "Hustle Talk With Daniel" },
+              "offers": {
+                "@type": "Offer",
+                "url": "https://digital-product-guide-tau.vercel.app/",
+                "priceCurrency": "NGN",
+                "price": "4800",
+                "availability": "https://schema.org/InStock"
+              }
+            })
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {"@type":"Question","name":"Can I use the free version of ChatGPT?","acceptedAnswer":{"@type":"Answer","text":"Yes. The prompts and workflow work with free ChatGPT. A paid AI plan is not required."}},
+                {"@type":"Question","name":"What if I cannot complete it in exactly seven consecutive days?","acceptedAnswer":{"@type":"Answer","text":"Use the seven days as focused work sessions. If life interrupts, pause and continue with the next day rather than quitting."}},
+                {"@type":"Question","name":"Do I need business or technical experience?","acceptedAnswer":{"@type":"Answer","text":"No. The system is designed for beginners and explains each action in plain language."}},
+                {"@type":"Question","name":"What kind of digital product can I create?","acceptedAnswer":{"@type":"Answer","text":"An ebook, guide, checklist, template, workbook, mini-course outline, or another simple knowledge-based product."}},
+                {"@type":"Question","name":"Will this guarantee that I make money?","acceptedAnswer":{"@type":"Answer","text":"No. Income depends on your offer, audience, execution and market. The guide gives you a process for creating and launching, not an income guarantee."}},
+                {"@type":"Question","name":"How will I receive the guide?","acceptedAnswer":{"@type":"Answer","text":"After a successful purchase through Selar, your digital files are delivered through the checkout platform."}},
+                {"@type":"Question","name":"Can I use this outside Nigeria?","acceptedAnswer":{"@type":"Answer","text":"Yes. The principles work internationally. Selar may show locally available payment options based on your location."}},
+                {"@type":"Question","name":"Is payment secure?","acceptedAnswer":{"@type":"Answer","text":"Checkout is handled by Selar. This page does not collect or store your payment card details."}},
+                {"@type":"Question","name":"What if I get stuck?","acceptedAnswer":{"@type":"Answer","text":"Return to the checklist for the current day, complete the smallest next action, and use the included prompts to work through the block."}}
+              ]
+            })
+          }}
+        />
+      </head>
       <body className="antialiased font-sans">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
