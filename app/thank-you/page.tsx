@@ -43,61 +43,50 @@ export default function ThankYouPage() {
           <div className="mt-12">
             <h2 className="text-center font-serif text-2xl font-black">Download Your Files</h2>
             
+            <div className="mt-8 rounded-3xl border-2 border-primary bg-primary/5 p-8 text-center">
+              <p className="text-xl font-bold text-foreground">Your download links have been sent to your email</p>
+              <p className="mt-4 text-muted-foreground">
+                Check your inbox (and spam folder) for an email from Selar with your download links. 
+                The email was sent immediately after your payment was confirmed.
+              </p>
+              <div className="mt-6 rounded-xl bg-background p-6">
+                <p className="text-sm font-bold text-foreground">Can&apos;t find the email?</p>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Check your spam/junk folder, or contact support with your order confirmation.
+                </p>
+              </div>
+            </div>
+
             <div className="mt-8 space-y-3">
-              <a 
-                href="#download" 
-                className="flex items-center justify-between rounded-xl border-2 border-primary bg-primary/5 px-6 py-4 font-bold text-foreground transition hover:bg-primary/10"
-              >
-                <span>Stop Overthinking — The 7-Day Action System</span>
-                <svg className="size-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                </svg>
-              </a>
-
-              <a 
-                href="#download" 
-                className="flex items-center justify-between rounded-xl border border-border bg-background px-6 py-4 font-bold text-foreground transition hover:bg-secondary"
-              >
-                <span>Idea Filter + Buyer Worksheet</span>
-                <svg className="size-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                </svg>
-              </a>
-
-              <a 
-                href="#download" 
-                className="flex items-center justify-between rounded-xl border border-border bg-background px-6 py-4 font-bold text-foreground transition hover:bg-secondary"
-              >
-                <span>AI Digital Product Prompt Pack</span>
-                <svg className="size-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                </svg>
-              </a>
-
-              <a 
-                href="#download" 
-                className="flex items-center justify-between rounded-xl border border-border bg-background px-6 py-4 font-bold text-foreground transition hover:bg-secondary"
-              >
-                <span>First Launch Content Pack</span>
-                <svg className="size-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                </svg>
-              </a>
-
-              <a 
-                href="#download" 
-                className="flex items-center justify-between rounded-xl border border-border bg-background px-6 py-4 font-bold text-foreground transition hover:bg-secondary"
-              >
-                <span>First 30 Days After Launch Plan</span>
-                <svg className="size-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                </svg>
-              </a>
+              <details className="group rounded-xl border border-border bg-background p-6">
+                <summary className="cursor-pointer font-bold text-foreground">📦 What&apos;s Included in Your Package</summary>
+                <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="size-4 shrink-0 text-primary" />
+                    Stop Overthinking — The 7-Day Action System (Main Guide)
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="size-4 shrink-0 text-primary" />
+                    Idea Filter + Buyer Worksheet
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="size-4 shrink-0 text-primary" />
+                    AI Digital Product Prompt Pack
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="size-4 shrink-0 text-primary" />
+                    First Launch Content Pack
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="size-4 shrink-0 text-primary" />
+                    First 30 Days After Launch Plan
+                  </li>
+                </ul>
+              </details>
             </div>
 
             <div className="mt-6 space-y-2 text-center text-sm text-muted-foreground">
-              <p>Check your inbox — we also sent a backup copy to your email.</p>
-              <p className="font-bold">Save your files to your phone or computer now.</p>
+              <p className="font-bold">Once you download your files, save them to your phone or computer.</p>
             </div>
           </div>
 
