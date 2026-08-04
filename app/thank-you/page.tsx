@@ -1,13 +1,13 @@
 import { CheckCircle2, Download, ExternalLink, FileText, Rocket, Target, Bot, Calendar, Megaphone } from 'lucide-react'
 
 export default function ThankYouPage() {
-  // Google Drive download links - Replace these with your actual links
+  // Real Google Drive/Sheets download links
   const downloads = {
-    mainGuide: 'https://drive.google.com/file/d/YOUR_FILE_ID_1/view?usp=sharing',
-    ideaFilter: 'https://drive.google.com/file/d/YOUR_FILE_ID_2/view?usp=sharing',
-    aiPrompts: 'https://drive.google.com/file/d/YOUR_FILE_ID_3/view?usp=sharing',
-    launchContent: 'https://drive.google.com/file/d/YOUR_FILE_ID_4/view?usp=sharing',
-    thirtyDayPlan: 'https://drive.google.com/file/d/YOUR_FILE_ID_5/view?usp=sharing',
+    mainGuide: 'https://drive.google.com/file/d/1HqBCq-h7eNQXoe-ZpepPEnlcDWo9zZVj/view?usp=sharing',
+    ideaFilter: 'https://docs.google.com/spreadsheets/d/1CI93wwux9K1Tn5xp-iVTQ4V1lKbLfuex/edit?usp=sharing',
+    aiPrompts: 'https://drive.google.com/file/d/1Ju_Gp-_HuCjt8Bp8s6K7ci2LAA-sxIc-/view?usp=sharing',
+    launchContent: 'https://drive.google.com/file/d/1Y-IxU6R5VbHcJzhkcPlqbY9x3UaHPtmi/view?usp=sharing',
+    thirtyDayPlan: 'https://docs.google.com/spreadsheets/d/1B2AmvgRxdoezZaK8bLTHNhLR0VFIc6zE/edit?usp=sharing',
   }
 
   return (
@@ -87,8 +87,9 @@ export default function ThankYouPage() {
                   </p>
                 </div>
                 <div className="flex shrink-0 items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-bold text-primary-foreground transition group-hover:translate-x-1">
-                  <Download className="size-4" />
+                  <Download className="size-4" aria-hidden="true" />
                   <span className="hidden sm:inline">Download</span>
+                  <span className="sr-only sm:hidden">Download main guide</span>
                 </div>
               </div>
             </a>

@@ -49,14 +49,14 @@
 
 :root {
   color-scheme: light;
-  /* Warm professional palette: blue primary, amber accent */
+  /* Brand purple palette: purple primary (#6E1B7A), amber accent */
   --background: oklch(1 0 0);
   --foreground: oklch(0.28 0.02 260);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.28 0.02 260);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.28 0.02 260);
-  --primary: oklch(0.55 0.22 264);
+  --primary: oklch(0.42 0.18 310);
   --primary-foreground: oklch(0.99 0 0);
   --secondary: oklch(0.97 0.01 255);
   --secondary-foreground: oklch(0.3 0.03 264);
@@ -67,8 +67,8 @@
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.91 0.01 255);
   --input: oklch(0.91 0.01 255);
-  --ring: oklch(0.55 0.22 264);
-  --chart-1: oklch(0.55 0.22 264);
+  --ring: oklch(0.42 0.18 310);
+  --chart-1: oklch(0.42 0.18 310);
   --chart-2: oklch(0.77 0.16 68);
   --chart-3: oklch(0.439 0 0);
   --chart-4: oklch(0.371 0 0);
