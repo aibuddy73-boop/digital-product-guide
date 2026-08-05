@@ -16,23 +16,24 @@ const lato = Lato({
 })
 
 export const metadata: Metadata = {
-  title: 'Stop Overthinking — The 7-Day Action System | Hustle Talk With Daniel',
+  title: 'Stop Collecting Ideas. Start Finishing Products. | 7-Day System by Daniel',
   description:
-    'Turn one idea into your first published digital product in 7 days using AI. A practical, honest execution system for Nigerian creators, workers, students and side-hustlers.',
+    'No 40-hour course. No expensive tools. Just 7 daily action plans, AI prompts, and the exact checklist that got me from "someday" to published in one week. Build and launch your first digital product using free ChatGPT.',
   generator: 'v0.app',
+  metadataBase: new URL('https://digital-product-guide-tau.vercel.app'),
   alternates: {
     canonical: 'https://digital-product-guide-tau.vercel.app/',
   },
   openGraph: {
-    title: 'Stop Overthinking — Build and Launch in 7 Days',
-    description: 'A practical AI-assisted action system for turning one useful idea into your first published digital product.',
+    title: 'Stop Collecting Ideas. Start Finishing Products — 7-Day System',
+    description: 'Turn one useful idea into a published digital product in 7 days. Practical execution system with AI prompts, daily checklists, and launch templates. Free ChatGPT works.',
     type: 'website',
     images: [{ url: '/images/social-share.png', width: 1200, height: 630, alt: 'Stop Overthinking by Hustle Talk With Daniel' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Stop Overthinking — Build and Launch in 7 Days',
-    description: 'Turn one useful idea into your first published digital product.',
+    title: 'Stop Collecting Ideas. Start Finishing Products',
+    description: '7-day system that forces you to ship — not study. Build your first digital product using free AI tools.',
     images: ['/images/social-share.png'],
   },
   icons: {
@@ -73,8 +74,8 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Product",
-              "name": "Stop Overthinking: The 7-Day Action System",
-              "description": "Turn one idea into your first published digital product in 7 days using AI. A practical, honest execution system for Nigerian creators, workers, students and side-hustlers.",
+              "name": "Stop Collecting Ideas. Start Finishing Products: The 7-Day System",
+              "description": "No 40-hour course. No expensive tools. Just 7 daily action plans, AI prompts, and the exact checklist for building and launching your first digital product using free ChatGPT.",
               "brand": { "@type": "Organization", "name": "Hustle Talk With Daniel" },
               "offers": {
                 "@type": "Offer",
