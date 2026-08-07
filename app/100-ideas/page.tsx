@@ -3,8 +3,7 @@
 import { ArrowRight, Bot, Check, ChevronDown, Clock3, FileText, Lightbulb, Lock, ShieldCheck, Sparkles, Target, Users, Zap } from 'lucide-react'
 import { track } from '@vercel/analytics'
 
-// TODO: Update with the actual Selar URL for the 100 Ideas product
-const CHECKOUT_URL = 'https://selar.com/digital_product'
+const CHECKOUT_URL = 'https://selar.com/100-digital-product-ideas'
 
 const categories = [
   ['📚', 'Ebooks & Guides'],
