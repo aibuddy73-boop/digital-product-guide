@@ -57,8 +57,9 @@ function doPost(e) {
    - Who has access: **Anyone**
 4. Click **Deploy**
 5. Click **Authorize access** → choose your Google account → Allow
-6. **Copy the Web App URL** (looks like `https://script.google.com/macros/s/ABC.../exec`)
-
+6. **Copy the Web App URL** (looks like https://script.google.com/macros/s/AKfycbyskJVaP2MSGNwprNK12svZ61wZbrZTFJPBiLitntTVzkGuLEHMpvBh674LvxyOZMegFA/exec)
+  Deployment : AKfycbyskJVaP2MSGNwprNK12svZ61wZbrZTFJPBiLitntTVzkGuLEHMpvBh674LvxyOZMegFA
+   
 ### Step 4: Add to Vercel
 
 1. Go to [Vercel Dashboard](https://vercel.com) → your project → Settings → Environment Variables
